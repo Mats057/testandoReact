@@ -1,8 +1,11 @@
-function Tarefa() {
+import React from 'react'
+import './Tarefa.css'
+
+function Tarefa(props) {
   return (
     <div className="tarefa">
-        
-        <button>Deletar</button>
+      <p id={props.index}>{props.nomeTarefa}</p>
+      <button>Deletar</button>
     </div>
   );
 }
