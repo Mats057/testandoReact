@@ -1,14 +1,50 @@
 #root {
-  max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
-.card {
-  padding: 2em;
+.listaTarefas{
+  display: flex;
+  padding: 2rem 0;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
 }
-.teVieJateQuis {
-  font-size: 1.5em;
-  font-weight: bold;
-  color: #ff0000;
+.tarefa{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: row;
+  width: 60rem;
+  max-width: 100%;
+  background-color: rgb(63, 63, 170);
+  border-radius: 8px;
+  margin-bottom: 1.7rem;
+}
+.tarefa p{
+  text-align: left;
+  color: white;
+  font-size: 1.2rem;
+  margin-left: 1rem;
+  width: 100%;
+}
+
+.tarefa.complete{
+  background-color: rgb(63, 170, 63);
+}
+
+.tarefa.complete p{
+  text-decoration: line-through;
+}
+
+.tarefa button{
+  background-color: rgb(36, 36, 112);
+  border-radius: 0 8px 8px 0;
+  height: 61px;
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  z-index: 9999;
 }
